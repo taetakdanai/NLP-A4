@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLI Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Similarity - NLI Prediction</h1>
+        <form method="POST">
+            <label for="premise">Premise:</label>
+            <textarea id="premise" name="premise" rows="4" required></textarea>
+            
+            <label for="hypothesis">Hypothesis:</label>
+            <textarea id="hypothesis" name="hypothesis" rows="4" required></textarea>
+            
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if label %}
+        <h3>Prediction: {{ label }}</h3>
+        {% endif %}
+    </div>
+</body>
+</html>
