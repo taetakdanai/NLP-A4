@@ -156,7 +156,7 @@ Open: http://localhost:8000
    
 Below is a screenshot of the running web application:
    
-[Web App Screenshot](web_app.png)
+![Web App Screenshot](web_app.png)   
 
 ------------------------------------------------------------------------
 
